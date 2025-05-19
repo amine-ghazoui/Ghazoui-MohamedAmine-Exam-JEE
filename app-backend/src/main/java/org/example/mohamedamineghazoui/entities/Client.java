@@ -1,15 +1,12 @@
 package org.example.mohamedamineghazoui.entities;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.List;
-
 @Entity
 @Data
-@AllArgsConstructor @NoArgsConstructor
+@AllArgsConstructor @NoArgsConstructor @Getter @Setter
 public class Client {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,3 +18,4 @@ public class Client {
     private List<Credit> credits;
 
 }
+
