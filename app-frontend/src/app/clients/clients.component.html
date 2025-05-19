@@ -1,4 +1,3 @@
-<p>clients works!</p>
 <div class="container py-5">
   <!-- Gestion des données avec le pipe async -->
   <ng-container *ngIf="customers | async as listCustomers; else failureOrLoading">
@@ -37,6 +36,7 @@
             <tbody>
               <tr *ngFor="let customer of listCustomers">
                 <td>{{ customer.id }}</td>
+                <td>{{ customer.nom }}</td>
                 <td>{{ customer.email }}</td>
                 <td class="text-end">
                   <!-- Boutons stylés Bootstrap -->
