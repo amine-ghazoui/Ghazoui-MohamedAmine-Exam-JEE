@@ -18,5 +18,4 @@ public class CreditProfessionnelDTO extends Credit {
     private double montant;
     private int dureeMois; // en mois
     private double tauxInteret;
-    private ClientDTO client;
 }
